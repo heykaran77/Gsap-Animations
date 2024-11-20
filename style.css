@@ -11,38 +11,9 @@ body{
     background-color: #0c0c0c;
     overflow-x: hidden;
 }
-.page1{
-    height: 100%;
-    width: 100%;
-    background-color: #1f1f1f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-.page2{
-    height: 100%;
-    width: 100%;
-    padding: 5vw;
-    background-color: #0c0c0c;
-}
-.page3{
-    height: 100%;
-    width: 100%;
-    background-color: #1f1f1f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box{
+.main{
     height: 200px;
-    width: 200px;
-    background-color: red;
-}
-.page2 h1{
-    font-size: 30vw;
-    font-weight: bolder;
-    color: beige;
-    white-space: nowrap;
-    text-transform: uppercase;
+    width: 100%;
+    /* background-color: crimson; */
 }
