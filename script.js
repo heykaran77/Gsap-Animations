@@ -1,21 +1,25 @@
-var initialPath = "M 10 100 Q 500 100 900 100"
-var finalPath = "M 10 100 Q 500 100 900 100"
+var main = document.querySelector("#main")
+var cursor = document.querySelector("#cursor")
 
-var string = document.querySelector(".main")
-string.addEventListener("mousemove", function(dets){
-    path = `M 10 100 Q ${dets.x} ${dets.y} 900 100`
-
-    gsap.to("svg path", {
-        attr: {d:path},
+main.addEventListener("mousemove", function(dets){
+    gsap.to(cursor, {
+        x: dets.x,
+        y: dets.y,
         duration: 0.5,
-        ease: "power3.out"
+        ease: "power.out"
     })
 })
 
-string.addEventListener("mouseleave", function(){
-    gsap.to("svg path", {
-        attr: {d:finalPath},
-        duration: 1.5,
-        ease: "elastic.out(1,0.2)"
-    })
+gsap.to("#page3 h1", {
+    transform: "translateX(-3600px)",
+    scrollTrigger: {
+        scrub: 3,
+        trigger: "#page3",
+        scroller: "body",
+        markers: true,
+        start: "top 0",
+        end: "top -200%",
+        pin: true
+    },
+    
 })
