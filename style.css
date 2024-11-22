@@ -8,62 +8,53 @@
 }
 body{
     height: 100vh;
-    background-color: #fff;
+    background-color: #0c0c0c;
     overflow-x: hidden;
+    cursor: none
 }
-.string{
-    height: 200px;
-    width: 100%;
-    background-color: purple;
-}
-#page1{
-    width: 100%;
-    height: 100%;
-    background-color: crimson;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#page2{
-    width: 100%;
-    height: 100%;
-    background-color: #555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#page3{
-    width: 100%;
-    height: 100%;
-    background-color: #888;
-}
-#page4{
-    width: 100%;
-    height: 100%;
-    background-color: #151515;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #main{
     height: 100%;
     width: 100%;
-    background-color: #0c0c0c;
-    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1
-{
-    font-size: 400px;
-    color: red;
-}
 #cursor
 {
-    height: 20px;
-    width: 20px;
-    background-color: beige;
-    border-radius: 30px;
     position: fixed;
+    height: 22px;
+    width: 22px;
+    background-color: rgb(255, 170, 0);
+    border-radius: 30px;
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 5px;
     z-index: 9;
+}
+
+#image{
+    position: relative;
+    height: 40vh;
+    width: 60vw;
+    background-color: beige;
+    background-position: center;
+    background-size: cover;
+}
+
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    position: absolute;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
 }
