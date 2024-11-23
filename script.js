@@ -82,3 +82,19 @@ document.addEventListener("touchmove", function (event) {
     lastTouchY = currentTouchY; // Update for the next move
   }
 });
+
+
+// Function to show/hide the custom cursor based on screen width
+function updateCursorVisibility() {
+    if (window.innerWidth <= 768) { // Adjust width threshold as needed
+        cursor.style.display = "none"; // Hide custom cursor
+    } else {
+        cursor.style.display = "block"; // Show custom cursor
+    }
+}
+
+// Initial check on page load
+updateCursorVisibility();
+
+// Re-check on window resize
+window.addEventListener("resize", updateCursorVisibility);
