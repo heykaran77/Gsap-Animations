@@ -7,7 +7,12 @@ main.addEventListener("mousemove", function(dets){
         duration: 0.1
     })
 })
-
+document.addEventListener("mouseleave", function () {
+    cursor.style.opacity = 0;
+  });
+document.addEventListener("mouseenter", function () {
+    cursor.style.opacity = 1;
+  });
 window.addEventListener("wheel", function(dets){
     if(dets.deltaY>0){
         gsap.to(".marque", {
