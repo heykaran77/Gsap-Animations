@@ -1,53 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gsap | Animations</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gsap Animations</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-</head>
-<body>
-    <div id="cursor"></div>
-    <div id="main">
-        <div class="page1"></div>
-        <div class="page2"> 
-            <div class="move">
-            <div class="marque">
-                 <h1>Money Over Feelings</h1>
-                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
-            </div>
-            <div class="marque">
-                 <h1>Money Over Feelings</h1>
-                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
-            </div>
-            <div class="marque">
-                 <h1>Money Over Feelings</h1>
-                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
-            </div>
-            <div class="marque">
-                 <h1>Money Over Feelings</h1>
-                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
-            </div>
-            <div class="marque">
-                 <h1>Money Over Feelings</h1>
-                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
-            </div>
-            <div class="marque">
-                 <h1>Money Over Feelings</h1>
-                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
-            </div>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <main>
+      <div class="page page1">
+        <div class="nav">
+          <h1><span>hey</span>Karan.</h1>
+          <i class="ri-menu-4-line"></i>
         </div>
-        <div class="page3"></div>
-        <div class="page4"></div>
-      
+        <div class="full">
+          <i class="ri-close-fill"></i>
+          <h4><span>Home</span></h4>
+          <h4><span>About</span></h4>
+          <h4><span>Work</span></h4>
+          <h4><span>Contact Us</span></h4>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src = "script.js"></script>
-</body>
+        <div class="mid-text">
+          <h1>Nav. <span class="italic">Animation</span></h1>
+        </div>
+        <div class="page-bottom"></div>
+      </div>
+      <div class="page page2">
+        <h1 class="page2-headline">Scrolling Banner Animation</h1>
+        <div class="marquee-container">
+          <div class="marquee">
+            <h1>Scroll Down</h1>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="marquee">
+            <h1>Scroll Down</h1>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="marquee">
+            <h1>Scroll Down</h1>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="marquee">
+            <h1>Scroll Down</h1>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="marquee">
+            <h1>Scroll Down</h1>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="marquee">
+            <h1>Scroll Down</h1>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="marquee">
+            <h1>Scroll Down</h1>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+        </div>
+      </div>
+      <div class="page page3">
+        <h1 class="page3-head">Text Animation Using Gsap</h1>
+        <div class="text-anime">
+          <h1>Keep Scrolling</h1>
+        </div>
+      </div>
+      <div class="page page4">
+        <h1>String Effect</h1>
+        <div class="string">
+          <svg height="300" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M 10 150 Q 500 150 1000 150"
+              stroke="red"
+              fill="transparent"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="page page5">
+        <h1 class="scrolling-txt">Make it Happen!</h1>
+      </div>
+      <div class="page page6"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
