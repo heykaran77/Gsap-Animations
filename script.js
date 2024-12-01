@@ -180,7 +180,6 @@ gsap.to(".scrolling-txt", {
     trigger: ".page5",
     scroller: "body",
     scrub: 2,
-    markers: true,
     start: "top 0",
     end: "top -200%",
     pin: true,
